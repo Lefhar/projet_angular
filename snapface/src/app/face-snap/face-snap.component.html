@@ -1,6 +1,7 @@
 
 <div class="face-snap-card">
     <h2>{{ FaceSnap.title }}</h2>
+    @if (FaceSnap.location) {{{FaceSnap.location}}}
     <img [src]="imageUrl" [alt]="FaceSnap.title">
     <p>{{ FaceSnap.description }}</p>
     <p>FaceSnap créée le {{ FaceSnap.createdAt }}</p>

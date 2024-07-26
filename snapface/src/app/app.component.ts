@@ -39,5 +39,7 @@ export class AppComponent implements OnInit {
        6
     
     );
+    this.mySnap.setLocation('amiens');
+    this.myLastSnap.setLocation('corbie');
   }
 }
