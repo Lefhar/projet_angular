@@ -1,10 +1,14 @@
 
 <div class="face-snap-card">
-    <h2>{{ FaceSnap.title }}</h2>
-    @if (FaceSnap.location) {{{FaceSnap.location}}}
-    <img [src]="imageUrl" [alt]="FaceSnap.title">
-    <p>{{ FaceSnap.description }}</p>
-    <p>FaceSnap créée le {{ FaceSnap.createdAt }}</p>
+    <h2>{{ faceSnap.title }}</h2>
+    @if (faceSnap.location) {{{faceSnap.location}}
+}@else {
+<p> Localisation non spécifié</p>
+  
+  }
+    <img [src]="imageUrl" [alt]="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p>FaceSnap créée le {{ faceSnap.createdAt }}</p>
     <button (click)="onSnap()"> {{ButtonSnaps}}</button>
-    <p>🤌 {{ FaceSnap.snaps }}</p>
+    <p>🤌 {{ faceSnap.snaps }}</p>
   </div>
