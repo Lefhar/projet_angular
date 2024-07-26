@@ -30,11 +30,11 @@ export class FaceSnapComponent implements OnInit{
 
  onSnap(): void {
   if(this.UserHasSnap){
-    this.snaps--;
+    this.FaceSnap.snaps--;
     this.ButtonSnaps = "-1 Snap";
     this.UserHasSnap = false;
   }else{
-    this.snaps++;
+    this.FaceSnap.snaps++;
     this.ButtonSnaps = "+1 Snap";
     this.UserHasSnap = true;
   }
